@@ -1,7 +1,8 @@
 /*package whatever //do not write package name here */
 
 import java.io.*;
-
+import java.util.*;
+import java.lang.*;
 class fibonacci
 {
     static int fib(int n)
@@ -13,7 +14,8 @@ class fibonacci
       
     public static void main (String args[])
     {
-    int n = 12;
-    System.out.println(fib(n));
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(fib(n));
     }
 }
