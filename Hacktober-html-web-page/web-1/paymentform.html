@@ -6,14 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form</title>
 </head>
+<style>
+    *{
+        padding: 3px;
+        margin: 2px;
+    }
+    .container{
+        display: flex;
+        align-items: centre;
+        justify-content: center;
+        background-color: white;
+        padding: -10px;
+        margin-left: 400px;
+        margin-right: 400px;
+        box-shadow: 3px 2px 15px black;
+    }
+    body{
+        box-sizing: border-box;
+        background-color: rgba(122, 122, 122, 0.226);
+    }
+    p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+    h1{
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: underline;
+    }
+    h2{
+        text-decoration: underline;
+    }
+    input{
+        border-radius: 20px;
+        margin: 3px;
+        padding: 4px;
+    }
+    textarea{
+        height: 20px;
+        border-radius: 20px;
+    }
+    .submit{
+        background-color: black;
+        color: white;
+        border-style: none;
+        border-radius: 10px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 6px;
+        box-shadow: 2px 3px rgba(34, 33, 33, 0.575);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .submit:hover{
+        background-color: white;
+        color: black;
+        box-shadow: 10px 5px 3px rgba(34, 33, 33, 0.575);
+        border-color: black;
+    }
+    #card_type{
+        border-radius: 20px;
+        border-style: double;
+    }
+    .required{
+        font-weight: lighter;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+    }
+</style>
 <body>
+    <div class="container">
     <form action="">
-        <h1>Payment Form</h1>
-        <p>Required Field followed by *</p>
+        <h1><center>Payment Form</center></h1>
+        <hr>
+        <p class="required">Required Field followed by *</p>
         <h2>Contact Information</h2>
         <p>Name : *<input type="text" name="name" required ></p>
         <fieldset>
-            <legend>Gender *</legend>
+            <legend><p>Gender:*</p></legend>
             <p>
                 Male <input type="radio" name="gender" id="male" required>
                 Female <input type="radio" name="gender" id="female" required>
@@ -21,7 +95,7 @@
         </fieldset>
         <p>Address : <textarea name="address" id="address" cols="70" rows="5"></textarea></p>
         <p>Email : <input type="email" name="email" id="email"></p>
-        <p>Pimcode : <input type="number" name="pincode" id="pincode"></p>
+        <p>Pincode : <input type="number" name="pincode" id="pincode"></p>
         <br>
         <h2>Payment Information</h2>
         <p>Card Type: *
@@ -35,8 +109,9 @@
         <p>Card Number: *<input type="number" name="card_number" id="card_number" required></p>
         <p>Expiratation Date: *<input type="date" name="exp" id="exp" required></p>
         <p>CVV : *<input type="password" name="cvv" id="cvv" required></p>
-        <input type="submit" value="Pay Now">
+        <input type="submit" class="submit" value="Pay Now">
 
     </form>
+</div>
 </body>
 </html>
