@@ -22,3 +22,45 @@
 .cards-wrapper > .col {
     z-index: 10;
 }
+
+
+
+
+#footer{
+    background-color: #9ad5e7;
+    color:white;
+}
+
+hr{
+  margin-bottom: 5px ;
+  border: 2px solid white;
+}
+
+.BackToTop{
+  margin-top: 30px;
+  margin-left: 50%;
+}
+
+.social{
+    padding-left: 37%;
+}
+
+.social-media{
+    margin: 30px 20px;
+}
+
+.social-media:hover{
+    color: #4e8db4;
+}
+
+.icon{
+    margin-bottom: 1rem ;
+    margin: 20px 15px;
+}
+
+.icon:hover{
+    color: #dce9f1;
+}
+
+
+
