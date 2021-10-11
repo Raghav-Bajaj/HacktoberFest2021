@@ -1,194 +1,295 @@
-<!-- <div id="ccc">
-  <form action="">
-    <label for="username">Username</label>
-    <input type="text" placeholder="username" name="username" id="username" />
-    <br />
-    <label for="password">Password</label>
-    <input
-      type="password"
-      placeholder="Password"
-      name="password"
-      id="password"
-    />
-    <br />
-    <button>Register</button>
-    <hr />
-  </form>
-</div>
-l
-
-
-
-
-
-
-<form action="https://www.youtube.com/results">
-  <label for="srs">Search Youtube</label>
-  <input type="text" name="search_query" id="srs" />
-  <button type="submit">Submit</button>
-</form>
-
-
-
-<form action="/Notes.html">
-<input type="text" name="size">
-<button>suk</button></form>
-
-
-
-
-
-<form action="/0">
-<label for="usr">Username</label>
-<input type="text" name="usr" id="usr" placeholder="Username">
-<label for="pass">Password</label>
-<input type="password" name="pass" id="pass" placeholder="Password">
-<button>Register</button></form>
-
-
-
-
-
-
-
-
-<form action="//">
-<input type="url" name="/" id="" placeholder="Enter A URL" value="https://">
-<button>submit</button></form>
-
+/*-------HTML file------*/
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Race Registration!</h1>
-
-    <form action="/">
-      <label for="fn">First Name</label>
-      <input type="text" name="/" id="fn" required />
-
-      <label for="ln">Last Name</label>
-      <input type="text" name="//" id="ln" required />
-
-      <br />
-      <br />
-      <br />
-      <br />
-
-      Select a Race:
-
-      <br />
-      <br />
-
-      <input type="radio" name="l" id="fr" required value="fr" />
-      <label for="fr">Fun Race 5k</label>
-      <br />
-
-      <input type="radio" name="l" id="hm" value="hm" />
-      <label for="hm">Half Marathon</label>
-      <br />
-
-      <input type="radio" name="l" id="fm" value="fm" />
-      <label for="fm">Full Marathon</label>
-
-      <br />
-      <br />
-      <br />
-
-      <label for="em">Email</label>
-      <input type="email" name="em" id="em" required />
-
-      <label for="pass">Password</label>
-      <input type="password" name="pass" id="pass" required />
-
-      <br />
-      <br />
-
-      <label for="age">Select Age Group:</label>
-      <select name="age" id="age" required>
-        <option value="U18">Under 18</option>
-        <option value="18-30">18-30</option>
-        <option value="30-50">30-50</option>
-        <option value="50+">50+</option>
-      </select>
-
-      <br />
-      <br />
-
-      <button>Register!</button>
-    </form>
-  </body>
-</html>
-
-<h1>Race Registration!</h1>
-
-<form action="/">
-    <label for="fn">First Name</label>
-    <input type="text" name="//" id="fn" required placeholder="Enter your first name!" />
-
-    <label for="ln">Last Name</label>
-    <input type="text" name="///" id="ln" required placeholder="Enter your Last name" />
-
-    <br />
-    <br />
-    <br />
-
-    <p>Select a Race:</p>
-
-    <input type="radio" name="l" id="ccc" />
-    <label for="ccc">Fun Race 5k</label> <br />
-
-    <input type="radio" name="l" id="ccc" />
-    <label for="ccc">Half Marathon</label> <br />
-
-    <input type="radio" name="l" id="ccc" />
-    <label for="ccc">Fun Race 5k</label>
-</form> -->
-
-<!--DON'T TOUCH ANYTHING IN THIS FILE!-->
-<!doctype html>
-
-<html>
 <head>
-
-  <title>Checkerboard</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text.css" href="styles.css">
+    <title>Websites website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+      <!--font Awesome ... for button icon-->
+    <script src="https://kit.fontawesome.com/9973cec642.js" crossorigin="anonymous"></script>
+  
 
 </head>
-
-<body>
-    <!--DON'T TOUCH ANYTHING IN THIS FILE!-->
-    <div id="board">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
+<body style="background-color: #E5E5E5;">
+    <div class="container bg-white mt-2 header">
+        <h1 style="text-align: center;">Add a cheesy caption here!!</h1>
     </div>
+    <nav class="navbar">
+      <a href="../websites-website/index.html" class="Home">Home</a>
+      <a href="#" class="templates">Templates</a>
+      <a href="../forms/signup.html" class="SignUp Page">Sign Up</a>
+      <a href="../forms/login.html" class="login">Login</a>
+    </nav>
+    <div class="container bg-white cards-container mb-4 mt-4">
+        <div class="row g-0 cards-wrapper">
+            <div class="col col-lg-3 col-md-5 col-sm-6 col-xs-12 m-4 "> 
+                <div class="card">
+                    <!-- add your website homepage screenshot here -->
+                    <img src="./images/example1.png" class="card-img-top" alt="website-name">
+                    <div class="card-body">
+                        <!-- here goes the name of the website -->
+                        <div class="card-title" style="font-weight: bold; ">Website Name</div>
+                        <!-- give a small description about your website -->
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Nibh sed pulvinar proin gravida hendrerit lectus a. 
+                            Senectus et netus et malesuada fames.
+                        </div>
+                        <!-- attach the link to your website -->
+                        <a href="#" class="btn mt-2"  style="background-color: #E5E5E5;">Head to the website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-5 col-sm-6 col-xs-12 m-4 "> 
+                <div class="card">
+                    <!-- add your website homepage screenshot here -->
+                    <img src="./images/example1.png" class="card-img-top" alt="website-name">
+                    <div class="card-body">
+                        <!-- here goes the name of the website -->
+                        <div class="card-title" style="font-weight: bold; ">Website Name</div>
+                        <!-- give a small description about your website -->
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Nibh sed pulvinar proin gravida hendrerit lectus a. 
+                            Senectus et netus et malesuada fames.
+                        </div>
+                        <!-- attach the link to your website -->
+                        <a href="#" class="btn mt-2"  style="background-color: #E5E5E5;">Head to the website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-5 col-sm-6 col-xs-12 m-4 "> 
+                <div class="card">
+                    <!-- add your website homepage screenshot here -->
+                    <img src="./images/example1.png" class="card-img-top" alt="website-name">
+                    <div class="card-body">
+                        <!-- here goes the name of the website -->
+                        <div class="card-title" style="font-weight: bold; ">Website Name</div>
+                        <!-- give a small description about your website -->
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Nibh sed pulvinar proin gravida hendrerit lectus a. 
+                            Senectus et netus et malesuada fames.
+                        </div>
+                        <!-- attach the link to your website -->
+                        <a href="#" class="btn mt-2"  style="background-color: #E5E5E5;">Head to the website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-5 col-sm-6 col-xs-12 m-4 "> 
+                <div class="card">
+                    <!-- add your website homepage screenshot here -->
+                    <img src="./images/example1.png" class="card-img-top" alt="website-name">
+                    <div class="card-body">
+                        <!-- here goes the name of the website -->
+                        <div class="card-title" style="font-weight: bold; ">Website Name</div>
+                        <!-- give a small description about your website -->
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Nibh sed pulvinar proin gravida hendrerit lectus a. 
+                            Senectus et netus et malesuada fames.
+                        </div>
+                        <!-- attach the link to your website -->
+                        <a href="#" class="btn mt-2"  style="background-color: #E5E5E5;">Head to the website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-5 col-sm-6 col-xs-12 m-4 "> 
+                <div class="card">
+                    <!-- add your website homepage screenshot here -->
+                    <img src="./images/example1.png" class="card-img-top" alt="website-name">
+                    <div class="card-body">
+                        <!-- here goes the name of the website -->
+                        <div class="card-title" style="font-weight: bold; ">Website Name</div>
+                        <!-- give a small description about your website -->
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Nibh sed pulvinar proin gravida hendrerit lectus a. 
+                        </div>
+                        <!-- attach the link to your website -->
+                        <a href="#" class="btn mt-2"  style="background-color: #E5E5E5;">Head to the website</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </div>
+    
+    
+    <!-- Footer -->
+
+
+    <footer id="footer">
+
+
+        <footer class="page-footer font-small ">
+      
+          <!-- Footer Links -->
+          <div class="container">
+      
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+      
+              <!-- Grid column -->
+              <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">About us</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">Awards</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">Help</a>
+                </h6>
+              </div>
+      
+      
+            </div>
+      
+            <hr>
+      <div class="social">
+            <i class="social-media fab fa-facebook-f fa-2x"></i>
+            <i class="social-media fab fa-twitter fa-2x"></i>
+            <i class="social-media fab fa-instagram fa-2x"></i>
+            <i class="social-media fas fa-envelope fa-2x"></i>
+      </div>
+            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+      
+      
+              <div class="col-md-8 col-12 mt-5">
+                <h4>Terms of Service-Privacy Policy-@2021Company</h4>
+                <h4>Website by Company</h4>
+      
+      
+              </div>
+      
+      
+            </div>
+      
+      <div class="BackToTop">
+      
+      <a id="back-to-top" href="#"  role="button"><i class="fas fa-chevron-up fa-2x "></i></a>
+      <h4>Back To Top</h4>
+      </div>
+      
+      
+          </div>
+      
+          </div>
+      
+        </footer>
+        <!-- Footer -->
+      </footer>
+      
+  
+    
+    
 </body>
 </html>
+/*----CSS file------- */
+.header {
+  background-image: url("./images/banner.png");
+  width: 100%;
+  height: 30vh;
+  background-repeat: repeat-x;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  margin: 12px;
+  padding: 12px;
+  align-items: space-around;
+  font-size: x-large;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover {
+  color: chocolate;
+}
 
+.cards-container {
+  background-image: url("./images/background.png");
+  background-repeat: round;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards-wrapper > .col {
+  z-index: 10;
+}
+
+#footer {
+  background-color: #9ad5e7;
+  color: white;
+}
+
+hr {
+  margin-bottom: 5px;
+  border: 2px solid white;
+}
+
+.BackToTop {
+  margin-top: 30px;
+  margin-left: 50%;
+}
+
+.social {
+  padding-left: 37%;
+}
+
+.social-media {
+  margin: 30px 20px;
+}
+
+.social-media:hover {
+  color: #4e8db4;
+}
+
+.icon {
+  margin-bottom: 1rem;
+  margin: 20px 15px;
+}
+
+.icon:hover {
+  color: #dce9f1;
+}
