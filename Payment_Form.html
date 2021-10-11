@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Quiz</title>
+</head>
+<body>
+    <form action="https://www.djangoproject.com/">
+        <h1>Course Sign Up Page</h1>
+        <p><b>Please Note:First Name,Last Name,Password,and Email are required</b></p>
+        <label for="fn">First Name:</label>
+       <input id="fn" type="text" name="FirstName" value="First Name">    
+       <label for="ln">Last Name:</label>
+       <input id="ln" type="text" name="LastName" value="Last Name">
+       <br>
+       <br>
+       <label for="em">Email:</label>
+       <input id="em" type="email" name="UserEmail" value="name@gmail.com">   
+       <label for="pas">Password:</label>
+       <input id="pas" type="password" name="UserPassword" value="UserPassword">
+       <br>
+       <br>
+       <h3>Are You over the age of 18?</h3>
+       <label for="y">Yes:</label>
+       <input id="y" type="radio" name="opinion" value="">  
+       <label for="n">No:</label>
+       <input id="n" type="radio" name="opinion" value="">
+        <br>
+        <br>
+        <h3>Do you have Credit Card or Paypal?</h3>
+        <select name="Card">
+            <option value="Rupay">Rupay</option>
+            <option value="PayPal">Paypal</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" name="submit" value="Sign Up">
+
+    </form>
+</body>
+</html>
