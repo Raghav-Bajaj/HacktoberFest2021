@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="\static\home\css\bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="\static\home\css\bootstrap.min.css.map" />
+    <link rel="stylesheet" type="text/css" href="\static\home\css\bootstrap.css.map" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="\static\home\css\index.css">
+    <link rel="stylesheet" type="text/css" href="\static\home\css\drops.css">
+
+
+    <title>
+        Aditya
+    </title>
+</head>
+
+<body>
+    <script src="\static\home\js\bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="leftcolumnName" style="text-align: start;">
+                    <a class="navbar-brand hometext" id="Home" href="{% url 'index' %}">Aditya</a>
+                </div>
+                <div class="rightOptions">
+                    <a href="https://github.com/aditya172926" target="_blank" style="font-size: 150%;"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aditya-26" target="_blank" style="font-size: 150%;"><i class="fa fa-linkedin"></i></a>
+                    <a class="navbar-brand" id="contact" href="#Contacts">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container sectioncontainer" id="doc_container">
+        <div class="rowwide">
+            <div class="leftcolumn">
+                <img class="gif_2" src="\media\GIF_2.gif">
+            </div>
+            <div class="rightcolumn">
+                <h1><span class="headline">Hi! I am <span class="myName">Aditya</span> ;)</span></h1>
+                <h4>here you will see what I have done and will be doing currently as an engineering student</h4>
+            </div>
+        </div>
+
+        <div class="personalIntro">
+            <h1> { What do I do? } </h1>
+            <br><br>
+            <h5>I am a student, majoring in Computer Engineering. Indulging myself
+                with gaining work experience and doing projects in data science, machine learning, software development
+                and automation.
+            </h5>
+            <h5>I've worked as a software engineer, analyst and in various project management roles for startups and
+                organizations. Continuing with that experience I am currently doing freelancing and personal projects
+                which I will showcase soon.</h5>
+
+            <br>
+        </div>
+
+        <div class="personalProject">
+            <h1> { Projects } </h1>
+            <br><br>
+            <h5>Most of my public work can be found in my <a href="https://github.com/aditya172926?tab=repositories" style="color: rgb(0, 102, 255);"
+                    target="_blank"><b>GitHub Repository <i class="fa fa-github"></i></b></a>, here are some</h5>
+            <br>
+                {% for project in projects %}
+                <button type="button" class="projectbutton" onclick="ProjectsApi({{ project.id }})">
+                    <h4><i class="fa fa-terminal"></i> {{ project.title }}</h4>
+                </button>
+                <br>
+                {% endfor %}
+            <img class="gif_3" src="\media\GIF_3.gif">
+        </div>
+
+        <div class="personalProject">
+            <h1> { Work and Internships } </h1>
+            <br><br>
+            {% for work in works %}
+            <button type="button" class="projectbutton" onclick="WorksApi({{ work.id }})">
+                <h4><i class="fa fa-angle-right"></i> {{ work.title }}</h4>
+            </button>
+            <br>
+            {% endfor %}
+            <img class="gif_4" src="\media\GIF_4.gif"><br><br>
+            <h4>and exploring more things to do.</h4>
+        </div>
+        
+        <div class="personalProject" id="Contacts">
+            <h2><i class="fa fa-coffee"></i></h2>
+            <h1> { Contact } </h1><br><br>
+            <div class="ContactLinks">
+                <a href="https://github.com/aditya172926" target="_blank"><h5>GitHub <i class="fa fa-github"></i></h5></a>
+                <a href="https://www.linkedin.com/in/aditya-26" target="_blank"><h5>LinkedIn <i class="fa fa-linkedin"></i></h5></a>
+                <a href="mailto: your_email@email.com" target="_blank"><h5>Your email <i class="fa fa-envelope"></i></h5></a>
+            </div>
+        </div>
+        <br>
+        <div class="rainClass" style="margin-left: 12%;">
+            {% include "home/drops.html" %}
+        </div>
+    </div>
+    
+
+    <div id="myModal1" class="modal">
+
+        <div class="modal-content" id="modal_data">
+            <span class="close">&times;</span>
+            <div class="modalSpace" id="modalspace1">
+
+            </div>
+        </div>
+    </div>
+<br><br>
+    <div id="myModal2" class="modal">
+
+        <div class="modal-content" id="modal_data2">
+            <span class="close">&times;</span>
+            <div class="modalSpace" id="modalspace2">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="\static\home\js\modal.js"></script>
+
+
+
+</body>
+
+</html>
