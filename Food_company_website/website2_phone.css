@@ -1,0 +1,37 @@
+.navbar{
+    flex-direction: column;
+}
+.navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+#home{
+    height: 280px;
+    padding: 3px 68px;
+}
+#home::before{
+    height: 370x;
+}
+#home p{
+    font-size: 0.5rem;
+}
+#services{
+    flex-direction: column;
+}
+#client{
+    overflow: hidden;
+}
+.h-primary{
+    font-size: 26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+#client{
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#client-section::before{
+    height: 900px;
+}
