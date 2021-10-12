@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<style>
+    body{
+        background-color: #f1f5f8;
+    }
+    main{
+        min-height: 700px;
+        display: grid;
+        place-items: center;
+    }
+    .container{
+        text-align: center;
+        line-height: 25px;
+    }
+    .counter{
+        color: rgb(4, 4, 48);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        font-size: 5rem;
+    }
+    .number{
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 7rem;
+    }
+    #bts{
+        cursor: pointer;
+        background-color: transparent;
+        letter-spacing: 2px;
+        padding: 4px 7px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 3px 1px black;
+        margin: 3px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #bts:hover{
+        background-color: black;
+        color: white;
+        box-shadow: 2px 3px 1px white;
+        transition: all 0.5s ease-out;
+
+    }
+    
+</style>
+<body>
+    <main>
+    <div class="container">
+        <h1 class="counter">Counter</h1> <h1 class="number"><span class="number">0</span></h1>
+        <button class="btn decrease"id="bts">DECREASE</button>
+        <button class="btn reset"   id="bts">RESET</button>
+        <button class="btn increase"id="bts">INCREASE</button>
+    </div>
+</main>
+<script>
+     let count=0;
+     const number=document.querySelector(".number");
+     const btns=document.querySelectorAll(".btn");
+
+     btns.forEach(function(btn){
+         btn.addEventListener("click",function(k){
+             const f=k.currentTarget.classList;
+             if(f.contains("decrease")){
+                 count--;
+             }
+             else if(f.contains("increase")){
+                 count++;
+             }
+             else{
+                 count=0;
+             }
+             number.textContent=count;
+         });
+     });
+</script>
+    
+</body>
+</html>
