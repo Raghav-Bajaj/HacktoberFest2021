@@ -1,0 +1,67 @@
+body
+{
+    text-align:center;
+    margin:0;
+    padding:0;
+    background:url(https://images.ctfassets.net/3s5io6mnxfqz/3oWxP5yKPv23J1jSWOt2fx/738b761c0b279d6731fcefe7d5de8c05/image3.jpg);
+    background-size:100%;
+}
+
+h1
+{
+    margin:80px auto 80px auto;
+}
+
+h2
+{
+    font-family: 'Sacramento', cursive;
+}
+
+p
+{
+    font-size:25px;
+}
+a
+{
+    text-decoration:none;
+}
+
+hr
+{
+    border:dotted;
+    border-bottom:none;
+    border-width:6px;
+    width:5%;
+}
+.breakfast
+{
+    margin:10px 35% 100px auto;
+}
+
+.snacks
+{
+    margin:40px auto 80px 35%;
+}
+
+.dessert
+{
+    margin-right:35%;
+}
+
+.pancake
+{
+    float:left;
+    margin-left:500px;
+}
+
+.french-fries
+{
+    float:right;
+    margin-right:500px
+}
+
+.lava-cake
+{
+    float:left;
+    margin-left:500px;
+}
