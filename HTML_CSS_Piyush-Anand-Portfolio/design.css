@@ -1,0 +1,119 @@
+body{
+  background-color: light blue;
+  background-image:url('data:image/jpeg;base64,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');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+ h1 {
+  margin-top: 100px;
+  margin-left:400px;
+  margin-right:400px;
+  font-size: 50px;
+  text-align: center;
+  color: blue;
+  /* display:inline; */
+}
+
+h2 {
+  margin-top: 100px;
+  font-size: 50px;
+  text-align: center;
+  color: blue;
+} 
+
+#hd{
+  margin: 0 50%;
+}
+
+#basic {
+  text-align:center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+ 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#logo{
+  border-radius: 40%;
+  height: 60px;
+}
+
+.pic{
+  border-radius:50%;
+}
+/* body {
+  background: url(https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+} */
+
+.bottom {
+  background: url(https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no repeat;
+  background-size: cover;
+}
+
+h5 {
+  margin-bottom: 50px;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+
+
+#lk{
+   width: 20%;
+} 
+
+.navbar{
+  z-index:1;
+  height:70px;
+}
+
+.pic{
+  position: relative;
+  z-index:2;
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 700px;
+  margin-right:600px;
+}
+
+.ach{
+  text-align:center;
+  color: rgb(255, 255, 255);
+    font-weight:bold;
+    line-height:40px;
+    font-size:30px;
+    font-family:arial;
+}
+
+.skills{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight:bold;
+  line-height:40px;
+  font-size:30px;
+  font-family:arial;
+}
+
+.contact{
+  text-align:center;
+  color: rgb(255, 255, 255);
+    font-weight:bold;
+    line-height:40px;
+    font-size:30px;
+    font-family:arial;
+}
+
+#review{
+  text-align:center;
+  color: rgb(255, 255, 255);;
+  font-weight:bold;
+  line-height:40px;
+  font-size:30px;
+  font-family:arial;
+}
