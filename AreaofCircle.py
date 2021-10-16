@@ -1,12 +1,13 @@
-def getArea(r):
+PI = 3.14 #pi value
 
- PI = 3.142 #Declaring the constant pi value 
- return PI * (r*r); #Performing pi times (r x r)
+#user-input
+r = float(input('Enter the radius of a circle: '))
 
+#Area formula
+area = PI * r * r
+#Circumference formula
+circumference = 2 * PI * r
 
-#function call
-#Printing only 2 decimal digits so "%.2f"
-#Test case 1
-print("Area is %.2f" %getArea(5));
-#Test case 2
-print("Area is %.2f" %getArea(12));
+#printing the outputs
+print("\n Area Of a Circle = %.2f" %area)
+print(" Circumference Of a Circle = %.2f" %circumference)
