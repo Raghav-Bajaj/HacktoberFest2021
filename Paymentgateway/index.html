@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Gateway</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+     <link rel="stylesheet" href="index.css">
+    </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>Food for  <span class="highlight">Everyone</h1></span>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+              <img class="mySlides" src="img/foodbanks.jpg" style="width:100%">
+               <img class="mySlides" src="img/foodbank1.jpg" style="width:100%">
+               <img class="mySlides" src="img/foodbank.jpg" style="width:100%">
+    
+
+    <section id="newsletter">
+      <div class="container">
+        <h1><i>Even the smallest of actions make a big difference. Donate now!</i></h1>
+    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HaSXiUsj6IZuaB" async> </script> </form>
+      </div>
+    </section>
+
+    </body>
+  
+      <script>
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); 
+}</script>
+       
+  
+</html>
