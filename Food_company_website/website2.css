@@ -179,6 +179,18 @@ footer{
     font-size: 2.8rem;
     padding: 12px;
 }
+.recent{
+    padding-top: 8px;
+     padding-bottom: 0%; 
+     padding-left: 0%; 
+     padding-right: 0%;
+    font-size: 13px; 
+    padding-right: 10px; 
+    padding-top: 5px; 
+    padding-bottom: 0;
+     
+    height: 50%;
+    } 
 .h-secondary{
     font-family: 'Bree Serif', serif;
     font-size: 2.3rem;
