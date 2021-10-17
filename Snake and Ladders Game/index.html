@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snakes and Ladders</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #dice {
+      padding: 30px;
+      border: 1px solid #333;
+      display: inline-block;
+      font-size: 2rem;
+    }
+
+    button#roll-dice {
+      padding: 5px 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .col {
+      border: 1px solid #333;
+      height: 70px;
+      width: 70px;
+      display: inline-block;
+    }
+
+    .col.player {
+      background-color: #09f3;
+    }
+
+    .col.snake {
+      background-color: #f003;
+    }
+    .col.ladder {
+      background-color: #0f03;
+    }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <div id="board"></div>
+
+    <hr/>
+    <div id="dice">0</div>
+    <button id="roll-dice">Roll Dice</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
