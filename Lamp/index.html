@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="./vueLamp_img/images/menu.png" class="menu-img">
+            <img src="./vueLamp_img/images/logo.png" class="logo-img">
+            <ul>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Modern</a></li>
+                <li><a href="#">Contemporary</a></li>
+                <li><a href="#">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="./vueLamp_img/images/lamp.png" class="lamp">
+            <img src="./vueLamp_img/images/light.png" class="light" id="light">
+        </div>
+        <div class="text-container">
+            <h1>Latest <br> In Lighting</h1>
+            <p>This is the first lamp from our company.We are making huge collection of modern lamps in all categories from home use to office use.</p>
+            <a href="">Check all the collections</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn=document.getElementById('btn');
+        var light=document.getElementById('light');
+
+        function toggleBtn()
+        {
+            btn.classList.toggle("active");
+            light.classList.toggle("lamp-on");
+        }
+    </script>
+   
+</body>
+</html>
