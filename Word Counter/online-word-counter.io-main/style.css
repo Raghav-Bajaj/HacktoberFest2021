@@ -1,0 +1,50 @@
+*{margin: 20 20; padding: 0; }
+
+		@font-face{font-family: 'Amatic-Bold'; 
+		  src: url('Amatic-Bold.ttf') format("truetype");}
+
+		  div {
+		  	height: 100vh;
+		  	display: flex;
+		  	justify-content: center;
+		  	align-items: center;
+		  	flex-direction: column;
+
+
+		  }
+
+		  .headf{ font-family: Amatic-Bold; 
+		  			font-weight: bolder;
+			  color:#000000;
+
+		  	
+
+		  }
+h1.headf:hover{ color: #facaa2;
+  				text-shadow:
+      							0 0 7px #fff,
+      							0 0 10px #fff,
+      							0 0 21px #fff,
+      							0 0 42px #0fa;}
+.sign{color:#000000;}
+h3.sign:hover{ color: #0000FF;
+			font-size:4 rem;}
+
+
+		  textarea { 
+
+		  	border: 2.5px solid #00bfff; border-radius: 10px; outline:none; font-size:1.2rem; padding: 10px 2px; box-shadow: 0 04px 10px #0cbfe9;}
+
+		  	textarea:focus { 
+    			outline:none;
+    			border: 2px solid #9ecaed;
+   			 box-shadow:0 0 10px #C14646;
+							}
+
+		
+
+		p{
+			color: #17e3a9;
+			font-size: 2rem;
+			font-weight: bolder; 
+		}
