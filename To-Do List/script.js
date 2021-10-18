@@ -13,6 +13,10 @@ filteropt.addEventListener('click', filterTodo);
 function addTodo(e){
     e.preventDefault();
 
+    if(todoInput.value==""){
+        alert("Please Enter Text");
+    }
+        else{
     const todoDiv=document.createElement("div");
     todoDiv.classList.add("todo");
     savaTodo(todoInput.value)
@@ -35,6 +39,7 @@ function addTodo(e){
     todoDiv.appendChild(trashButton);
 
     todoList.appendChild(todoDiv); 
+    }   
 }
 
 function deleteCheck(e){
