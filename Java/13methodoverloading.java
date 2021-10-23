@@ -9,7 +9,11 @@ class add {
 }
 class Dao {
   public static void main(String args[]) {
-    int a, b, c, d, e;
+    int a;
+    int b;
+    int c;
+    int d;
+    int e;
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter two nos :");
     a = sc.nextInt();
