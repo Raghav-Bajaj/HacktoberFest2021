@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  color: rgb(169, 77, 255);
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translate(0, 50px);
+}
+
+span.fade {
+  opacity: 1;
+  transform: translate(0, 0px);
+}
