@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/Login.css" />
+    <script src="assets/auth.js"></script>
+  </head>
+
+  <body>
+    <form class="box" method="REQUEST" id="login" onsubmit="return login()">
+      <h1>login</h1>
+      <input
+        id="username"
+        type="text"
+        placeholder="USERNAME"
+        autofocus
+        required
+      />
+      <input id="password" type="password" placeholder="PASSWORD" required />
+      <input id="submit" type="submit" value="LOGIN" />
+
+      <label class="label">
+        <input type="checkbox" name="remember" value="remember" /> Remember
+        me</label
+      >
+
+      <p class="register">
+        Don't have an account yet?
+        <a href="#">Register Now</a>
+      </p>
+    </form>
+  </body>
+</html>
