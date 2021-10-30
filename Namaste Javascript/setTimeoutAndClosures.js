@@ -5,7 +5,7 @@ function x() {
   setTimeout(() => {
     console.log(x);
   }, 1000);
-  console.log("Hello world ");
+  console.log("Hey there! ");
 }
 x();
 
